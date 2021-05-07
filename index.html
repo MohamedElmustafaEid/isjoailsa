@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<!-- OpenLayers -->
+		<link rel="stylesheet" href= "v6.5.0/css/ol.css">
+		<script src="v6.5.0/build/ol.js"></script>
+		
+		<!-- LayerSwitcher -->
+		<script src="http://rawgit.com/walkermatt/ol-layerswitcher/master/dist/ol-layerswitcher.js"></script>
+		<link rel="stylesheet" href="http://rawgit.com/walkermatt/ol-layerswitcher/master/src/ol-layerswitcher.css">
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>WebGIS</strong> Homepage </a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+							    <div>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1> GIS - Lab project <br />
+											by Group - 4</h1>
+											<p> GIS Lab 2020 - 2021</p>
+										</header>
+										<p>This project was developed by Geoinformatics students of group-4.
+										It asseses, through GIS & Statistical analysis, the accuracy & reliability of two population datasets (<a href="https://ghsl.jrc.ec.europa.eu/ghs_pop2019.php">GHS - 2015</a> & <a href="https://www.worldpop.org/about">Worldpop - 2015</a>) in order to inform users on the benefits and limitations derived from their usage.
+									    It contains seven base-maps, in addition to the requested layers.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									</div>
+									<div id="map"></div>
+								    <script src="map.js"></script>
+							        </div>
+
+									<!--
+									<span class="image object">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+								    -->
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2> Technologies </h2>
+									</header>
+									<div class="features">
+										<article>
+											<img src="images/geo200.jpg"></img>
+											<div class="content">
+												<h3>GeoServer</h3>
+												<p>GeoServer is a Java-based server that allows users to view and edit geospatial data. Using open standards set forth by the Open Geospatial Consortium (OGC), GeoServer allows for great flexibility in map creation and data sharing.</p>
+											</div>
+										</article>
+										<article>
+											<img src="images/q100.jpg"></img>
+											<div class="content">
+												<h3>QGIS</h3>
+												<p>QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. All the layers were produced using QGIS.</p>
+											</div>
+										</article>
+										<article>
+											<img src="images/ol200.jpg"></img>
+											<div class="content">
+												<h3>OpenLayers</h3>
+												<p>OpenLayers is an open-source JavaScript library for displaying map data in web browsers as slippy maps. It provides an API for building rich web-based geographic applications similar to Google Maps and Bing Maps.</p>
+											</div>
+										</article>
+										<article>
+											<img src="images/js100.jpg"></img>
+											<div class="content">
+												<h3>JavaScript</h3>
+												<p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>General Remarks</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#map" class="image"><img src="images/MapOfDiff.png" alt="" /></a>
+											<h3>Map of differences - Intercomparison</h3>
+											<p> Visual analysis shows that both maps are equally popualted in all the tiles apporximately.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">Statistics</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#map" class="image"><img src="images/MapOfDiff3.png" alt="" /></a>
+											<h3>Map of differences - Intercomparison</h3>
+											<p>In Islands that are located on the Pacific ocean, both maps were equally populated except in some cases where the Worldpop map was better populated, specifically as we go West.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#map" class="image"><img src="images/MapOfDiff2.png" alt="" /></a>
+											<h3>Map of differences - Intercomparison</h3>
+											<p>The worldpop map is better populated in South America, in detail:
+												<ul>
+													<li> In Ecuador, Peru and Bolivia it's clearly better populated specially on the ocean side.</li>
+													<li> The same applies to the Western part, albeit to a lesser degree.</li>
+													<li> Both maps equally populated in the middle, with some fluctuations.</li>
+													<li> GHS map is better populated around the Amazon.</li>
+												</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">WebGIS</a></li>
+										<li><a href="generic.html">Intercomparison</a></li>
+										<li><a href="generic2.html">Generic2</a></li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Group members </h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://www.linkedin.com/in/mustafa-eid-7a1b08167/" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3> MohamedElmustafa </h3>
+											<p> Geoinformatics MSc student - Politecnico Di Milano</p>
+										</article>
+										<article>
+											<a href="https://www.linkedin.com/in/nizar-yousif-a6190058/" class="image"><img src="images/Nizar.jfif" alt="" /></a>
+											<h3> Nizar </h3>
+											<p>Geoinformatics MSc student - Politecnico Di Milano. Former Senior GIS Specialist.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<h3> Carlos </h3>
+											<p>Geoinformatics MSc student - Politecnico Di Milano.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>For more information contact Eng. MohamedElmustafa Eid.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:mohamedelmustafaomer.eid@mail.polimi.it">Our Email</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">Via Filippo corridoni, 22<br />
+										Milan, IT</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- file contains script of our map -->
+			<script src="assets/js/map.js"></script>
+	</body>
+</html>
